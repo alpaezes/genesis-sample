@@ -1,10 +1,10 @@
 <?php
 /**
- * Genesis Sample.
+ * TJ Genesis Child.
  *
- * This file adds the landing page template to the Genesis Sample Theme.
+ * This file adds the landing page template to the TJ Genesis Child Theme.
  *
- * @package Genesis Sample
+ * @package TJ Genesis Child
  * @author  StudioPress
  * @license GPL-2.0+
  * @link    http://www.studiopress.com/
