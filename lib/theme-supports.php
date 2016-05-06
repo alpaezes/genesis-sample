@@ -1,10 +1,10 @@
 <?php
 /**
- * Genesis Starter.
+ * TJ Genesis Child Theme.
  *
  * This file registers support for theme features to the TJ Genesis Child Theme.
  *
- * @package Genesis Starter
+ * @package TJ Genesis Child Theme
  * @author  Tim Jensen
  * @license GPL-2.0+
  */
