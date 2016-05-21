@@ -12,6 +12,7 @@
 //* Add Image Sizes
 add_image_size( 'featured-image', 680, 400, TRUE );
 
+//* Remove Genesis Blog page templates
 add_filter( 'theme_page_templates', 'be_remove_genesis_page_templates' );
 
 /**
@@ -24,7 +25,7 @@ add_filter( 'theme_page_templates', 'be_remove_genesis_page_templates' );
  * @return array
  */
 function be_remove_genesis_page_templates( $page_templates ) {
-    
+
 	unset( $page_templates['page_archive.php'] );
 	unset( $page_templates['page_blog.php'] );
 

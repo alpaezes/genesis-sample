@@ -41,3 +41,6 @@ add_theme_support( 'genesis-structural-wraps', array(
 	'footer-widgets',
 	'footer'
 ) );
+
+//* Rename primary and secondary navigation menus
+add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
