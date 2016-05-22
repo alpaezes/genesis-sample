@@ -84,7 +84,8 @@ gulp.task('postcss', ['clean:styles'], function() {
 		.pipe(sass({
 			includePaths: [].concat(bourbon, neat),
 			errLogToConsole: true,
-			outputStyle: 'expanded' // Options: nested, expanded, compact, compressed
+			outputStyle: 'expanded', // Options: nested, expanded, compact, compressed
+			indentWidth: 4
 		}))
 
 		// Parse with PostCSS plugins.
