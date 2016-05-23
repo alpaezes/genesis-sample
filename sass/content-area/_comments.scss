@@ -5,39 +5,38 @@
 .entry-comments,
 .entry-pings {
 	background-color: #fff;
+	font-size: 16px;
+	font-size: 1.6rem;
 	margin-bottom: 40px;
 }
 
 .comment-respond,
 .entry-pings {
-	padding: 40px 40px 16px;
+	padding: 60px 60px 32px;
 }
 
 .entry-comments {
-	padding: 40px;
-}
-
-.comment-header {
-	font-size: 16px;
-	font-size: 1.6rem;
-}
-
-.comment-content {
-	clear: both;
-	word-wrap: break-word;
+	padding: 60px;
 }
 
 .comment-list li {
-	margin-top: 40px;
-	padding: 10px 40px;
+	padding: 40px 0 0 30px;
 }
 
 .comment-list .depth-1 {
 	padding-left: 0;
 }
 
-.comment-list li li {
-	margin-right: -40px;
+.comment-header {
+	margin-bottom: 30px;
+}
+
+.comment-content {
+	clear: both;
+}
+
+.comment-content ul > li {
+	list-style-type: disc;
 }
 
 .comment-respond input[type="email"],
@@ -51,17 +50,10 @@
 	margin-right: 12px;
 }
 
-.entry-comments .comment-author {
+.comment-header p {
 	margin-bottom: 0;
 }
 
 .entry-pings .reply {
 	display: none;
-}
-
-.form-allowed-tags {
-	background-color: #f5f5f5;
-	font-size: 16px;
-	font-size: 1.6rem;
-	padding: 24px;
 }

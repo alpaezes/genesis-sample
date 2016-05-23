@@ -8,17 +8,20 @@
 }
 
 .header-image .title-area {
+	margin: 0 auto;
+	max-width: 300px;
 	padding: 0;
 }
 
 .header-full-width .title-area {
+	float: none;
 	width: 100%;
 }
 
 .site-title {
 	font-size: 30px;
 	font-size: 3rem;
-	font-weight: 900;
+	font-weight: 700;
 	line-height: 1.2;
 }
 
@@ -30,6 +33,8 @@
 }
 
 .header-image .site-title > a {
+	background-position: center !important;
+	background-size: contain !important;
 	float: left;
 	min-height: 80px;
 	width: 100%;
@@ -38,7 +43,7 @@
 .site-description {
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.5;
 }
 

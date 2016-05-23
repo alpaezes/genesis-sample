@@ -43,4 +43,4 @@ add_theme_support( 'genesis-structural-wraps', array(
 ) );
 
 //* Rename primary and secondary navigation menus
-add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
+add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'tj-genesis-child' ), 'secondary' => __( 'Footer Menu', 'tj-genesis-child' ) ) );
