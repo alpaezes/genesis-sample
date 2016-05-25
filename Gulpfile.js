@@ -1,8 +1,9 @@
 // Require our dependencies
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var browserSync = require('browser-sync').create();
 
-gulp.task('sass', function(){
+gulp.task('styles', function(){
 	return gulp.src('sass/style.scss')
 	.pipe(sass({
 		outputStyle: 'expanded', // Options: nested, expanded, compact, compressed
@@ -10,9 +11,18 @@ gulp.task('sass', function(){
 		indentWidth: 1
 	})) // Converts Sass to CSS with gulp-sass
     .pipe(gulp.dest('./'))
+	.pipe(browserSync.reload({stream: true}));
 });
 
 // Gulp watch syntax
-gulp.task('watch', function(){
-	gulp.watch('sass/**/*.scss', ['sass']);
-})
+gulp.task('serve', function(){
+
+	// Kick off BrowserSync.
+	browserSync.init({
+		proxy: "www.sandbox-sass.dev"
+    });
+
+	gulp.watch('sass/**/*.scss', ['styles']);
+});
+
+gulp.task('default',['styles', 'serve']);
