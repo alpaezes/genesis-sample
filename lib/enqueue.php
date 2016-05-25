@@ -21,8 +21,6 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'dashicons' );
 
-	wp_enqueue_style( 'tj-genesis-child-theme', CHILD_URL . '/style.css', array(), CHILD_THEME_VERSION );
-
 	wp_enqueue_script( 'tj-genesis-child-responsive-menu', CHILD_URL . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
 
 	wp_localize_script( 'tj-genesis-child-responsive-menu', 'genesisSampleL10n', $output );
