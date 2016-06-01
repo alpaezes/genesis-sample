@@ -24,6 +24,9 @@ define( 'CHILD_THEME_NAME', 'TJ Genesis Child Theme' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
 define( 'CHILD_THEME_VERSION', '1.0.1' );
 
+//* Configure Genesis Admin Options
+include_once( CHILD_DIR . '/lib/admin.php' );
+
 //* Enqueue Scripts and Styles
 include_once( CHILD_DIR . '/lib/enqueue.php' );
 
